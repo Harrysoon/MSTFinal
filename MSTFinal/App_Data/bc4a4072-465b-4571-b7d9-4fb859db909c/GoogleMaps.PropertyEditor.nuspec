@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.0.1</version>
+    <authors>Warren Buckley,Lee Messenger &amp; Lee Kelleher</authors>
+    <owners />
+    <projectUrl>http://our.umbraco.org/projects/backoffice-extensions/google-maps</projectUrl>
+    <id>GoogleMaps.PropertyEditor</id>
+    <title>Google Maps</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Google Maps Umbraco V5 Property Editor</description>
+  </metadata>
+</package>

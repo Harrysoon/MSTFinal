@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 19 June 2016 23:17:07
+   Source : E:\Users\Harrison.harrison-pc\Dropbox\MST\MSTFinal\MSTFinal\Umbraco\
+     Dest : E:\Users\Harrison.harrison-pc\Dropbox\MST\MSTFinal\MSTFinal\App_Data\NuGetBackup\20160619-231707\Umbraco\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	E:\Users\Harrison.harrison-pc\Dropbox\MST\MSTFinal\MSTFinal\Umbraco\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : 19 June 2016 23:17:07
+

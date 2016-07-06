@@ -1,0 +1,290 @@
+﻿ 2016-06-24 12:57:38,516 [P11744/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on LANPC150
+ 2016-06-24 12:57:38,537 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-06-24 12:57:38,545 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2016-06-24 12:57:38,579 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-06-24 12:57:38,804 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 224ms)
+ 2016-06-24 12:57:38,812 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-06-24 12:57:38,816 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 3ms)
+ 2016-06-24 12:57:38,816 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-06-24 12:57:38,821 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 4ms)
+ 2016-06-24 12:57:38,833 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-06-24 12:57:38,837 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+ 2016-06-24 12:57:38,838 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-06-24 12:57:38,842 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 4ms)
+ 2016-06-24 12:57:38,908 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-06-24 12:57:38,911 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 3ms)
+ 2016-06-24 12:57:38,912 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-06-24 12:57:38,916 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 4ms)
+ 2016-06-24 12:57:39,965 [P11744/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-24 12:57:40,257 [P11744/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-24 12:57:40,284 [P11744/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-24 12:57:40,362 [P11744/D2/T1] WARN  Umbraco.Core.Sync.DatabaseServerMessenger - No last synced Id found, this generally means this is a new server/install. The server will build its caches and indexes, and then adjust its last synced Id to the latest found in the database and maintain cache updates based on that Id.
+ 2016-06-24 12:57:40,400 [P11744/D2/T1] INFO  umbraco.content - Load Xml from file...
+ 2016-06-24 12:57:40,456 [P11744/D2/T1] INFO  umbraco.content - Loaded Xml from file.
+ 2016-06-24 12:57:40,458 [P11744/D2/T1] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 12:57:42,208 [P11744/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-06-24 12:57:42,215 [P11744/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-06-24 12:57:42,216 [P11744/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-06-24 12:57:42,223 [P11744/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3761ms)
+ 2016-06-24 12:57:42,376 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-06-24 12:57:42,385 [P11744/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 9ms)
+ 2016-06-24 12:57:46,029 [P11744/D2/T9] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:15229/umbraco (UmbracoModule request)
+ 2016-06-24 12:57:46,207 [P11744/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 12:57:46,210 [P11744/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 12:58:46,337 [P11744/D2/T13] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-23 12:58:46
+ 2016-06-24 12:58:46,414 [P11744/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-06-24 12:58:46,420 [P11744/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 6ms)
+ 2016-06-24 12:58:57,404 [P11744/D2/T18] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username harry.fleetwood@gmail.com from IP address ::1
+ 2016-06-24 12:58:57,406 [P11744/D2/T18] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: harry.fleetwood@gmail.com logged in from IP address ::1
+ 2016-06-24 12:58:57,494 [P11744/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-24 12:58:57,568 [P11744/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 73ms)
+ 2016-06-24 12:58:57,651 [P11744/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-06-24 12:58:57,659 [P11744/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 7ms)
+ 2016-06-24 12:58:57,892 [P11744/D2/T14] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-24 12:58:57,892 [P11744/D2/T14] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-06-24 12:58:57,895 [P11744/D2/T14] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-06-24 12:58:57,934 [P11744/D2/T14] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 39ms)
+ 2016-06-24 12:58:58,478 [P11744/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-06-24 12:58:58,484 [P11744/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 6ms)
+ 2016-06-24 12:59:09,591 [P11744/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Programs' with Id '1068' has been unpublished.
+ 2016-06-24 12:59:09,623 [P11744/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-06-24 12:59:09,631 [P11744/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 8ms)
+ 2016-06-24 12:59:09,903 [P11744/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program List' with Id '1069' has been unpublished.
+ 2016-06-24 12:59:10,067 [P11744/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Strength' with Id '1075' has been unpublished.
+ 2016-06-24 12:59:13,647 [P11744/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 12:59:13,649 [P11744/D2/T18] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:12:23,369 [P11744/D2/T14] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlServerCe.SqlCeException (0x80004005): The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_cmsContent_cmsContentType_nodeId ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 279
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+ 2016-06-24 13:12:38,744 [P11744/D2/T25] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlServerCe.SqlCeException (0x80004005): The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_cmsContent_cmsContentType_nodeId ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 279
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+ 2016-06-24 13:12:41,401 [P11744/D2/T10] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlServerCe.SqlCeException (0x80004005): The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_cmsContent_cmsContentType_nodeId ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 279
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+ 2016-06-24 13:12:45,608 [P11744/D2/T11] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlServerCe.SqlCeException (0x80004005): The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_cmsContent_cmsContentType_nodeId ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 279
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+ 2016-06-24 13:12:45,942 [P11744/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-24 13:12:45,942 [P11744/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-06-24 13:12:48,933 [P11744/D2/T14] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlServerCe.SqlCeException (0x80004005): The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_cmsContent_cmsContentType_nodeId ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 279
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+ 2016-06-24 13:13:02,453 [P11744/D2/T17] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlServerCe.SqlCeException (0x80004005): The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_cmsContent_cmsContentType_nodeId ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 279
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Execute(String sql, Object[] args)
+ 2016-06-24 13:14:25,053 [P11744/D2/T29] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 13:14:29,084 [P11744/D2/T36] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:14:29,085 [P11744/D2/T49] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:14:29,117 [P11744/D2/T45] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 13:14:33,185 [P11744/D2/T18] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 13:14:37,201 [P11744/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:14:37,204 [P11744/D2/T44] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:21:33,815 [P11744/D2/T115] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'MST Fitness' with Id '1058' has been unpublished.
+ 2016-06-24 13:21:34,348 [P11744/D2/T115] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 13:21:38,372 [P11744/D2/T115] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:21:38,374 [P11744/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:22:18,598 [P11744/D2/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Editors.IEditorValidator
+ 2016-06-24 13:22:18,606 [P11744/D2/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Editors.IEditorValidator, found 0 (took 7ms)
+ 2016-06-24 13:30:35,540 [P11744/D2/T126] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-24 13:30:35,540 [P11744/D2/T126] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-06-24 13:41:54,647 [P11744/D2/T28] ERROR Umbraco.Web.WebServices.SaveFileController - An error occurred saving a file. Template does not exist
+System.ArgumentException: No node exists with id '1064'
+   at umbraco.cms.businesslogic.template.Template.setupNode()
+   at umbraco.cms.businesslogic.CMSNode..ctor(Int32 Id)
+   at umbraco.cms.businesslogic.template.Template..ctor(Int32 id)
+   at Umbraco.Web.WebServices.SaveFileController.SaveTemplate(String templateName, String templateAlias, String templateContents, Int32 templateId, Int32 masterTemplateId)
+ 2016-06-24 13:56:26,643 [P11744/D2/T55] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 13:56:32,355 [P11744/D2/T136] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:56:32,357 [P11744/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:57:41,501 [P11744/D2/T35] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 13:57:47,202 [P11744/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:57:47,205 [P11744/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:59:32,919 [P11744/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'MST Fitness' with Id '0' has been published.
+ 2016-06-24 13:59:36,954 [P11744/D2/T53] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:59:36,984 [P11744/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:59:50,719 [P11744/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'MST Fitness' with Id '1114' has been unpublished.
+ 2016-06-24 13:59:54,748 [P11744/D2/T121] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 13:59:54,750 [P11744/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 13:59:58,591 [P11744/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '0' has been published.
+ 2016-06-24 14:00:02,622 [P11744/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:00:02,625 [P11744/D2/T20] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:08:51,397 [P12560/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on LANPC150
+ 2016-06-24 14:08:51,475 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-06-24 14:08:51,482 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2016-06-24 14:08:51,511 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-06-24 14:08:51,792 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 281ms)
+ 2016-06-24 14:08:51,980 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-06-24 14:08:51,981 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-06-24 14:08:51,981 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-06-24 14:08:51,983 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-06-24 14:08:51,995 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-06-24 14:08:51,995 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+ 2016-06-24 14:08:51,996 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-06-24 14:08:52,004 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 8ms)
+ 2016-06-24 14:08:52,191 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-06-24 14:08:52,192 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-06-24 14:08:52,192 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-06-24 14:08:52,193 [P12560/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-06-24 14:08:52,994 [P12560/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-24 14:08:53,210 [P12560/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-24 14:08:53,236 [P12560/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-24 14:08:53,361 [P12560/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-06-24 14:08:53,484 [P12560/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-06-24 14:08:53,551 [P12560/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-06-24 14:08:53,565 [P12560/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2221ms)
+ 2016-06-24 14:08:57,034 [P12560/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:15229/umbraco (UmbracoModule request)
+ 2016-06-24 14:08:57,189 [P12560/D2/T7] INFO  umbraco.content - Load Xml from file...
+ 2016-06-24 14:08:57,191 [P12560/D2/T7] INFO  umbraco.content - Loaded Xml from file.
+ 2016-06-24 14:08:58,774 [P12560/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-06-24 14:08:58,775 [P12560/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-06-24 14:09:03,144 [P12560/D2/T13] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-06-24 14:09:30,608 [P12560/D2/T13] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-06-24 14:09:34,413 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-24 14:09:34,413 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-06-24 14:09:34,440 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-06-24 14:09:34,442 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2016-06-24 14:09:34,448 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-24 14:09:34,449 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-06-24 14:09:34,451 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-06-24 14:09:34,451 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-06-24 14:09:34,466 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-06-24 14:09:34,467 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 0ms)
+ 2016-06-24 14:09:34,698 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-06-24 14:09:34,700 [P12560/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-06-24 14:09:57,282 [P12560/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-23 14:09:57
+ 2016-06-24 14:10:15,979 [P12560/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-06-24 14:10:15,981 [P12560/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 1ms)
+ 2016-06-24 14:10:36,263 [P12560/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Editors.IEditorValidator
+ 2016-06-24 14:10:36,264 [P12560/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Editors.IEditorValidator, found 0 (took 1ms)
+ 2016-06-24 14:10:42,962 [P12560/D2/T17] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-06-24 14:11:13,644 [P12560/D2/T19] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-06-24 14:13:24,589 [P12560/D2/T60] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1115' has been published.
+ 2016-06-24 14:13:28,728 [P12560/D2/T12] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:13:28,732 [P12560/D2/T32] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:13:40,512 [P12560/D2/T60] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1115' has been published.
+ 2016-06-24 14:13:44,575 [P12560/D2/T63] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:13:44,577 [P12560/D2/T67] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:13:50,399 [P12560/D2/T60] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1115' has been published.
+ 2016-06-24 14:13:54,462 [P12560/D2/T32] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:13:54,464 [P12560/D2/T61] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:15:09,706 [P12560/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Master' with Id '0' has been published.
+ 2016-06-24 14:15:16,482 [P12560/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:15:16,529 [P12560/D2/T61] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:15:42,954 [P12560/D2/T92] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1115' has been published.
+ 2016-06-24 14:15:47,019 [P12560/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:15:47,021 [P12560/D2/T97] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:15:49,053 [P12560/D2/T14] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1115' has been published.
+ 2016-06-24 14:15:53,126 [P12560/D2/T14] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:15:53,129 [P12560/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:16:14,354 [P12560/D2/T18] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:18,393 [P12560/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:16:18,396 [P12560/D2/T60] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:16:18,577 [P12560/D2/T47] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:22,416 [P12560/D2/T18] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:26,447 [P12560/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:16:26,451 [P12560/D2/T60] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:16:26,671 [P12560/D2/T50] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:30,703 [P12560/D2/T61] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:16:30,774 [P12560/D2/T60] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:16:35,149 [P12560/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1115' has been unpublished.
+ 2016-06-24 14:16:35,835 [P12560/D2/T18] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:39,328 [P12560/D2/T61] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:42,594 [P12560/D2/T77] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:45,677 [P12560/D2/T77] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Master' with Id '1118' has been unpublished.
+ 2016-06-24 14:16:46,676 [P12560/D2/T77] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:16:50,694 [P12560/D2/T77] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:16:50,696 [P12560/D2/T86] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:25:12,721 [P12560/D2/T141] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'PRograms' with Id '0' has been published.
+ 2016-06-24 14:25:16,741 [P12560/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:25:16,743 [P12560/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:26:08,134 [P12560/D2/T122] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program' with Id '0' has been published.
+ 2016-06-24 14:26:12,150 [P12560/D2/T81] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:26:12,153 [P12560/D2/T128] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:26:19,803 [P12560/D2/T128] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program' with Id '0' has been published.
+ 2016-06-24 14:26:23,832 [P12560/D2/T122] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:26:23,835 [P12560/D2/T132] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:26:23,915 [P12560/D2/T81] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program 2' with Id '1127' has been published.
+ 2016-06-24 14:26:27,990 [P12560/D2/T109] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:26:27,993 [P12560/D2/T109] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:26:35,578 [P12560/D2/T132] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program 3' with Id '0' has been published.
+ 2016-06-24 14:26:39,597 [P12560/D2/T81] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:26:39,600 [P12560/D2/T118] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:26:51,275 [P12560/D2/T132] ERROR dashboardUtilities.FeedProxy - Exception occurred
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
+ 2016-06-24 14:27:02,642 [P12560/D2/T136] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-06-24 14:27:02,643 [P12560/D2/T136] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-06-24 14:35:41,535 [P12560/D2/T177] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program 3' with Id '1128' has been unpublished.
+ 2016-06-24 14:35:41,850 [P12560/D2/T177] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program 2' with Id '1127' has been unpublished.
+ 2016-06-24 14:35:42,160 [P12560/D2/T177] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Program' with Id '1126' has been unpublished.
+ 2016-06-24 14:35:42,475 [P12560/D2/T177] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'PRograms' with Id '1124' has been unpublished.
+ 2016-06-24 14:35:44,150 [P12560/D2/T177] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:35:50,107 [P12560/D2/T177] INFO  umbraco.content - Loading content from database...
+ 2016-06-24 14:35:54,115 [P12560/D2/T177] INFO  umbraco.content - Save Xml to file...
+ 2016-06-24 14:35:54,118 [P12560/D2/T118] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-24 14:54:24,918 [P12560/D2/T348] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: harry.fleetwood@gmail.com, IP Address: ::1
+ 2016-06-24 18:09:57,363 [P12560/D2/T10] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-23 18:09:57
+ 2016-06-24 22:09:57,420 [P12560/D2/T568] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-23 22:09:57
