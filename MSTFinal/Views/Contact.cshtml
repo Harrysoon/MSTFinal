@@ -18,7 +18,9 @@
     <!-- end:fh5co-hero -->
     <div id="fh5co-contact">
         <div class="container">
-            <form action="#">
+            @using (Html.BeginForm("CreateMessage", "Contact"))
+            {
+                @Html.ValidationSummary()
                 <div class="row">
                     <div class="col-md-6 animate-box">
                         <h3 class="section-title">Enquiries</h3>
@@ -36,6 +38,11 @@
                                     <input type="text" class="form-control" placeholder="Email">
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Mobile Number (Optional)">
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
@@ -49,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            }
         </div>
     </div>
     <!-- END fh5co-contact -->
