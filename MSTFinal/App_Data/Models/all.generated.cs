@@ -416,59 +416,6 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 	}
 
-	/// <summary>Contact</summary>
-	[PublishedContentModel("contact")]
-	public partial class Contact : PublishedContentModel
-	{
-#pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "contact";
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-#pragma warning restore 0109
-
-		public Contact(IPublishedContent content)
-			: base(content)
-		{ }
-
-#pragma warning disable 0109 // new is redundant
-		public new static PublishedContentType GetModelContentType()
-		{
-			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
-		}
-#pragma warning restore 0109
-
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
-		{
-			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-		}
-
-		///<summary>
-		/// Contact Text
-		///</summary>
-		[ImplementPropertyType("contactText")]
-		public IHtmlString ContactText
-		{
-			get { return this.GetPropertyValue<IHtmlString>("contactText"); }
-		}
-
-		///<summary>
-		/// Contact Title
-		///</summary>
-		[ImplementPropertyType("contactTitle")]
-		public string ContactTitle
-		{
-			get { return this.GetPropertyValue<string>("contactTitle"); }
-		}
-
-		///<summary>
-		/// Map
-		///</summary>
-		[ImplementPropertyType("map")]
-		public AngularGoogleMaps.Model Map
-		{
-			get { return this.GetPropertyValue<AngularGoogleMaps.Model>("map"); }
-		}
-	}
-
 	/// <summary>About</summary>
 	[PublishedContentModel("about")]
 	public partial class About : PublishedContentModel
@@ -607,6 +554,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public string ResultPhotos
 		{
 			get { return this.GetPropertyValue<string>("resultPhotos"); }
+		}
+	}
+
+	/// <summary>Contact</summary>
+	[PublishedContentModel("contact")]
+	public partial class Contact : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "contact";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Contact(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 
