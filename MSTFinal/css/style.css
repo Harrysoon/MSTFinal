@@ -118,7 +118,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -135,7 +135,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover_2 {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -1398,5 +1398,7 @@ p.fh5co-social-icons {
 .col-md-6.col-md-offset-3.text-center.footer {
     margin-top: -12em !important;
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

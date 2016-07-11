@@ -468,12 +468,14 @@
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\Partials\FooterContactForm.cshtml" />
+    <Content Include="Views\MacroPartials\ListResults.cshtml">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="media\" />
     <Folder Include="Views\Contact\" />
-    <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -6,6 +6,7 @@ using Umbraco.Web.Mvc;
 using MSTFinal.Models;
 using System.Web.Mvc;
 using System.Net.Mail;
+using System.Threading;
 
 namespace MSTFinal.Controllers
 {
@@ -37,18 +38,29 @@ namespace MSTFinal.Controllers
 
             try
             {
-                SmtpClient smtp = new SmtpClient();
-                smtp.Send(email);
+                var sendMail = new Thread(() =>
+                    SendEmail(email));
+                sendMail.Start();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                email.Dispose();
             }
 
             TempData["IsSuccessful"] = true;
 
 
             return RedirectToCurrentUmbracoPage();
+        }
+
+        private void SendEmail(MailMessage email)
+        {
+            SmtpClient smtp = new SmtpClient();
+            smtp.Send(email);
         }
     }
 }

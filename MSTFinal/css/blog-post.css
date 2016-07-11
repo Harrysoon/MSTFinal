@@ -15,3 +15,7 @@
 .paging ul li {
     display:inline;
 }
+
+img.client-photos {
+    width: 33%;
+}

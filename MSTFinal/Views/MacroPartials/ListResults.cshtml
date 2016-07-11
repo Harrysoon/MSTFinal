@@ -1,4 +1,6 @@
-﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+﻿@using Umbraco.Web
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
 	@{
 		int pageSize = 3;
 		int page = 1;
@@ -21,9 +23,21 @@
 	<ul>
 		@foreach(var item in nodes.Skip((page - 1) * pageSize).Take(pageSize))
 		{
+		    var imagesCollection = "";
 			<div class="article">
-				<div class="articleTitle"><a href=@umbraco.library.NiceUrl(item.Id)><h3>@item.clientName<h3></a></div>
-				<div class="articlePhotos">@item.resultPhotos</div>
+				<div class="articleTitle"><a href=@umbraco.library.NiceUrl(item.Id)><h3>@item.clientName</h3></a></div>
+                @if (item.resultPhotos != null)
+                {
+                    foreach (var image in item.resultPhotos.ToString().Split(','))
+                    {
+                        var imageUrl = @Umbraco.TypedMedia(image).Url;
+                        <div class="demo-gallery">
+                            <a href="@imageUrl">
+                                <img class="client-photos" src="@Umbraco.TypedMedia(image).Url" />
+                            </a>
+                        </div>
+                    }
+                }
 				<div class="articlePreview"><p>@item.clientDescription<p></div>
 				<div class="articleInfo">
 				<p>Posted: @umbraco.library.LongDate(@item.UpdateDate.ToString(), true, " - ")</p>
@@ -55,4 +69,4 @@
 		</ul>
 	</div>
 	}
-	</div>
+</div>	
