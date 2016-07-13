@@ -19,3 +19,12 @@
 img.client-photos {
     width: 33%;
 }
+
+.blog-preview.article {
+    text-align: left;
+}
+
+.articleInfo p {
+    text-align: right;
+    font-size: 13px;
+}

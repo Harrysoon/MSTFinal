@@ -107,6 +107,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Recent Blog Title
+		///</summary>
+		[ImplementPropertyType("recentBlogTitle")]
+		public string RecentBlogTitle
+		{
+			get { return this.GetPropertyValue<string>("recentBlogTitle"); }
+		}
+
+		///<summary>
 		/// Trainers Description
 		///</summary>
 		[ImplementPropertyType("trainersDescription")]
@@ -580,6 +589,120 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Blog</summary>
+	[PublishedContentModel("blogContent")]
+	public partial class BlogContent : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "blogContent";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BlogContent(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlogContent, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Blog
+		///</summary>
+		[ImplementPropertyType("blog")]
+		public string Blog
+		{
+			get { return this.GetPropertyValue<string>("blog"); }
+		}
+
+		///<summary>
+		/// Description
+		///</summary>
+		[ImplementPropertyType("description")]
+		public IHtmlString Description
+		{
+			get { return this.GetPropertyValue<IHtmlString>("description"); }
+		}
+	}
+
+	/// <summary>Blog Page Holder</summary>
+	[PublishedContentModel("blogPageHolder")]
+	public partial class BlogPageHolder : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "blogPageHolder";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BlogPageHolder(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlogPageHolder, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Blog Page</summary>
+	[PublishedContentModel("blogPage")]
+	public partial class BlogPage : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "blogPage";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BlogPage(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlogPage, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Blog Post Contents
+		///</summary>
+		[ImplementPropertyType("blogPostContents")]
+		public IHtmlString BlogPostContents
+		{
+			get { return this.GetPropertyValue<IHtmlString>("blogPostContents"); }
+		}
+
+		///<summary>
+		/// Blog Post Title
+		///</summary>
+		[ImplementPropertyType("blogPostTitle")]
+		public string BlogPostTitle
+		{
+			get { return this.GetPropertyValue<string>("blogPostTitle"); }
 		}
 	}
 
