@@ -13449,7 +13449,7 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
 				font_size_legacy_values : 'xx-small,small,medium,large,x-large,xx-large,300%', // See: http://www.w3.org/TR/CSS2/fonts.html#propdef-font-size
 				apply_source_formatting : TRUE,
 				directionality : 'ltr',
-				forced_root_block : 'p',
+				forced_root_block : '',
 				hidden_input : TRUE,
 				padd_empty_editor : TRUE,
 				render_ui : TRUE,

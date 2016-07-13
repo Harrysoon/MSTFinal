@@ -483,6 +483,8 @@
     <Content Include="Views\Result.cshtml" />
     <Content Include="Views\Trainer.cshtml" />
     <Content Include="Views\Price.cshtml" />
+    <Content Include="Views\Blog.cshtml" />
+    <Content Include="Views\BlogPostPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

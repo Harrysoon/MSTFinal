@@ -59,14 +59,15 @@
         <div class="row text-center">
 
             @{
-                var blogSelection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPageHolder").Children.Where("Visible").OrderBy("UpdateDate desc").Take(2);
+                var blogSelection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children.Where("Visible").OrderBy("UpdateDate desc").Take(2);
             }
             <ul>
                 @foreach (var blogPage in blogSelection)
                 {
                     <div class="blog-preview article animate-box">
-                        <div class="articleTitle"><h3>@blogPage.blogPostTitle</h3></div>
-                        <div class="articlePreview"><p>@blogPage.blogPostContents<p></div>
+                        <div class="articleTitle"><h3 ><a class="blog-url" href="@umbraco.library.NiceUrl(blogPage.Id)">@blogPage.blogPostTitle</a></h3></div>
+                        <div class="articlePreview"><p>@blogPage.blogPostContent<p></div>
+                        <a href="@umbraco.library.NiceUrl(blogPage.Id)">Read More...</a>
                         <div class="articleInfo">
                             <p> @Umbraco.Field("writerName"), @blogPage.UpdateDate.ToString("dd/MM/yyyy")</p>
                         </div>
@@ -75,7 +76,7 @@
                 }
             </ul>
 
-            <a href="/blog">Read More...</a>
+            <a href="/blog">Blog</a>
         </div>
     </div>
 </div>
@@ -156,3 +157,5 @@
         </div>
     </div>
 </div>
+
+

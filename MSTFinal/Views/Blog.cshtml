@@ -1,5 +1,65 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Blog>
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.BlogContent>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Master.cshtml";
+    Layout = "Master.cshtml";
+    var param = Request.Params["category"];
+    dynamic cat = null;
+    if(param != null)
+    {
+        cat = Umbraco.Content(int.Parse(param));
+    }
 }
+<div class="fh5co-parallax" style="background-image: url(/images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+                <div class="fh5co-intro fh5co-table-cell animate-box">
+                    @if (cat != null)
+                    {
+                        <h1 class="text-center">@cat.Name Blog</h1>
+                    }
+                    else
+                    {
+                    <h1 class="text-center">Blog</h1>
+                    }
+					<p>All things MST</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end: fh5co-parallax -->
+<div id="fh5co-blog-section">
+    <div class="container">
+        <div class="container blog-container">
+            @{
+                var blogSelection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children.Where("Visible").OrderBy("UpdateDate desc");
+            }
+            <ul>
+    <div class="col-sm-6">
+        @foreach (var blogPage in blogSelection)
+        {
+            if(param != null && blogPage.category != param)
+            {
+                continue;
+            }
+            <h3><a class="blog-url" href="@umbraco.library.NiceUrl(blogPage.Id)">@blogPage.blogPostTitle</a></h3>
+                                    <p>@blogPage.blogPostContent</p>
+                                        <div class="bottom-article">
+                                            <ul class="meta-post">
+                                                <li><i class="icon-calendar"></i><a>@umbraco.library.FormatDateTime(@blogPage.createDate.ToString(), "dd/MM/yyyy")</a></li>
+                                                <li><i class="icon-user"></i><a>@blogPage.creatorName</a></li>
+                                                @{
+                                                    var categoryId = blogPage.Category;
+                                                    var category = Umbraco.Content(int.Parse(categoryId));
+                                                }
+                                                <li><i class="icon-folder-open"></i><a href="/blog?category=@category.Id">@category.Name</a></li>
+                                            </ul>
+                                        </div>
+                                        <br/>
+                                        }
+                                </div>
+                            </ul>
+        </div>
+   </div>
+</div>
