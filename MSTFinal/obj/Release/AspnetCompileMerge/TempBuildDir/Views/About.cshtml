@@ -1,0 +1,47 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.About>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+<div class="fh5co-parallax" style="background-image: url(images/home-image-4.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center">About MST</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-team-section">
+			<div class="container">
+				<div class="row about">
+					<div class="col-md-12 col-md-offset-0">
+						<img class="img-responsive animate-box" src="~/images/home-image-3.jpg" alt="About">
+					</div>
+					<div class="col-md-12 col-md-offset-0 animate-box">
+						<p>@Umbraco.Field("aboutDescription", removeParagraphTags: true)</p>
+					</div>
+				</div>
+	<div id="fh5co-programs-section">
+			<div class="container"></div>
+				<div class="row text-center">
+                @{
+                    var selection = CurrentPage.Site().FirstChild("programs").Children("program").Where("Visible");
+                }
+	            @foreach (var item in selection)
+                {
+			        <div class="col-md-4 col-sm-6">
+			            <div class="program animate-box">
+			                <img src="images/fit-dumbell.svg" alt="Cycling"/>
+				            <h3>@item.Name</h3>
+				            <p>@umbraco.library.RemoveFirstParagraphTag(item.programDescription.ToString())</p>
+			            </div>
+			        </div>
+                }
+				</div>
+			</div>
+		</div>

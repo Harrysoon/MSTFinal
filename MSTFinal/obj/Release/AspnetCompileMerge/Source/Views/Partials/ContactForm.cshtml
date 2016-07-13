@@ -1,0 +1,54 @@
+﻿@model MSTFinal.Models.ContactModel
+
+@using (Html.BeginUmbracoForm<MSTFinal.Controllers.ContactSurfaceController>("CreateContactMessage", null, new { }))
+{
+    if (Convert.ToBoolean(TempData["IsSuccessful"]))
+    {
+        <h1>Message Sent</h1>
+        <p>Your message has been sent. Someone will be in touch shortly.</p>
+    }
+    else
+    {
+    <fieldset>
+        <div class="row">
+            <div class="col-md-6 animate-box">
+                <h3 class="section-title">Enquiries</h3>
+                <p>We are happy to answer any questions you may have about MST and the programs we offer.</p>
+                <p>If you'd like to talk more about starting your journey with MST then please don't hestiate to get in touch. If you'd like us to call you back then please leave your mobile number and message us with a time that's best to get in touch.</p>
+            </div>
+            <div class="col-md-6 animate-box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Name" })
+                            @Html.ValidationMessageFor(m => m.Name)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.TextBoxFor(x => x.EmailAddress, new { @class = "form-control", @placeholder = "E-mail Address" })
+                            @Html.ValidationMessageFor(x => x.EmailAddress)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.TextBoxFor(x => x.MobileNumber, new { @class = "form-control", @placeholder = "Mobile Number (Optional)" })
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            @Html.TextAreaFor(x => x.Message, new { @class = "form-control", @placeholder = "Message", @rows = "7" })
+                            @Html.ValidationMessageFor(x => x.Message)
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    }
+}

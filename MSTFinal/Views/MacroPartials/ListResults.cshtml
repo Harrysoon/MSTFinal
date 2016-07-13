@@ -30,12 +30,15 @@
                 {
                     foreach (var image in item.resultPhotos.ToString().Split(','))
                     {
-                        var imageUrl = @Umbraco.TypedMedia(image).Url;
-                        <div class="demo-gallery">
+                        if (image != "")
+                        {
+                            var imageUrl = @Umbraco.TypedMedia(image).Url;
+                            <div class="demo-gallery">
                             <a href="@imageUrl">
                                 <img class="client-photos" src="@Umbraco.TypedMedia(image).Url" />
                             </a>
                         </div>
+                        }
                     }
                 }
 				<div class="articlePreview"><p>@item.clientDescription<p></div>

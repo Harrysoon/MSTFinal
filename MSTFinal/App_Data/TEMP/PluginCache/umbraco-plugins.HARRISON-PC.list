@@ -129,6 +129,23 @@
   <baseType type="Umbraco.Core.Media.IImageUrlProvider" resolutionType="FindAllTypes">
     <add type="Umbraco.Web.Media.ImageUrlProviders.ImageUrlProvider, umbraco, Version=1.0.5948.18146, Culture=neutral, PublicKeyToken=null" />
   </baseType>
+  <baseType type="Umbraco.Core.Models.PublishedContent.PublishedContentModel" resolutionType="FindAllTypes">
+    <add type="Umbraco.Web.PublishedContentModels.About, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Contact, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.File, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Folder, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.HomePage, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Image, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Member, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Price, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Prices, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Program, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Programs, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Result, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Results, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Trainer, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PublishedContentModels.Trainers, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+  </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IParameterEditor" resolutionType="FindAllTypes">
     <add type="Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.5948.18141, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.PropertyEditors.PropertyEditor, Umbraco.Core, Version=1.0.5948.18141, Culture=neutral, PublicKeyToken=null" />
@@ -206,9 +223,5 @@
     <add type="Umbraco.Core.Persistence.Mappers.ExternalLoginMapper, Umbraco.Core, Version=1.0.5948.18141, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.5948.18141, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Persistence.Mappers.UserTypeMapper, Umbraco.Core, Version=1.0.5948.18141, Culture=neutral, PublicKeyToken=null" />
-  </baseType>
-  <baseType type="umbraco.cms.businesslogic.macro.IMacroEngine" resolutionType="FindAllTypes">
-    <add type="umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.5948.18149, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Web.Macros.PartialViewMacroEngine, umbraco, Version=1.0.5948.18146, Culture=neutral, PublicKeyToken=null" />
   </baseType>
 </plugins>

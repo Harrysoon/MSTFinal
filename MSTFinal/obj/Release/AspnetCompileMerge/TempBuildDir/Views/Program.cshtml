@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Program>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+	<div class="col-md-4 col-sm-6">
+	<div class="program animate-box">
+	<img src="images/fit-dumbell.svg" alt="Cycling">
+		<h3>@Umbraco.Field("programTitle", removeParagraphTags: true)</h3>
+		<p>@Umbraco.Field("programDescription", removeParagraphTags: true)</p>
+	</div>
+	</div>

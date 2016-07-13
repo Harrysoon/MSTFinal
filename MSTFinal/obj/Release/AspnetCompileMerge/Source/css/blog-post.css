@@ -1,0 +1,21 @@
+/*!
+ * Start Bootstrap - Blog Post HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.paging a {
+    background-color: rgba(14, 14, 14, 0.83);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+.paging ul li {
+    display:inline;
+}
+
+img.client-photos {
+    width: 33%;
+}

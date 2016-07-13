@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MSTFinal</RootNamespace>
     <AssemblyName>MSTFinal</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -335,6 +335,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="about.html" />
+    <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\AngularGoogleMaps\1.0.8\angular-google-maps.js" />
     <Content Include="App_Plugins\AngularGoogleMaps\1.0.8\angular-google-maps.min.js" />
     <Content Include="App_Plugins\AngularGoogleMaps\1.0.8\config.coordinatesbehavour.html" />
@@ -429,7 +430,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Config\UrlRewriting.config" />
-    <Content Include="Config\umbracoSettings.config" />
+    <Content Include="Config\umbracoSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Config\trees.config" />
     <Content Include="Config\tinyMceConfig.config" />
     <Content Include="Config\scripting.config" />
@@ -444,6 +447,10 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
+    <Content Include="App_Data\umbraco.config" />
+    <Content Include="App_Data\packages\created\createdPackages.config" />
+    <Content Include="App_Data\packages\installed\installedPackages.config" />
+    <None Include="Properties\PublishProfiles\MST.pubxml" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -471,9 +478,11 @@
     <Content Include="Views\MacroPartials\ListResults.cshtml">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Views\Result.cshtml" />
+    <Content Include="Views\Trainer.cshtml" />
+    <Content Include="Views\Price.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="media\" />
     <Folder Include="Views\Contact\" />
   </ItemGroup>
@@ -586,9 +595,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Program.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Programs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\About.cshtml" />

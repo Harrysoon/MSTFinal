@@ -1,0 +1,72 @@
+﻿@using Umbraco.Web
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	@{
+		int pageSize = 3;
+		int page = 1;
+		int.TryParse(Request.QueryString["page"], out page);
+		var nodes = Umbraco.Content(1203).Children().Where("Visible").OrderBy("CreateDate desc");
+		
+		int totalNodes = nodes.Count();
+		int totalPages = (int)Math.Ceiling((double)totalNodes / (double)pageSize);
+		
+		if(page > totalPages)
+		{
+			page = totalPages;	
+		}
+		else if(page < 1)
+		{
+			page = 1;	
+		}
+	}
+	
+	<ul>
+		@foreach(var item in nodes.Skip((page - 1) * pageSize).Take(pageSize))
+		{
+		    var imagesCollection = "";
+			<div class="article">
+				<div class="articleTitle"><a href=@umbraco.library.NiceUrl(item.Id)><h3>@item.clientName</h3></a></div>
+                @if (item.resultPhotos != null)
+                {
+                    foreach (var image in item.resultPhotos.ToString().Split(','))
+                    {
+                        var imageUrl = @Umbraco.TypedMedia(image).Url;
+                        <div class="demo-gallery">
+                            <a href="@imageUrl">
+                                <img class="client-photos" src="@Umbraco.TypedMedia(image).Url" />
+                            </a>
+                        </div>
+                    }
+                }
+				<div class="articlePreview"><p>@item.clientDescription<p></div>
+				<div class="articleInfo">
+				<p>Posted: @umbraco.library.LongDate(@item.UpdateDate.ToString(), true, " - ")</p>
+				</div>
+			</div>
+				
+			<hr/>
+		}
+	</ul>
+	@if(totalPages > 1)
+	{
+	<div class="paging">
+		<ul>
+			@if(page > 1)
+			{
+				<li><a href="?page=@(page-1)">Prev</a></li>	
+			}
+			@for(int p = 1; p < totalPages + 1; p++)
+			{
+				var active = (p == page) ? "active" : string.Empty;
+				<li class="@active">
+                	<a href="?page=@p">@p</a>
+                </li>
+			}
+			@if(page < totalPages)
+			{
+				<li><a href="?page=@(page+1)">Next</a></li>	
+			}
+		</ul>
+	</div>
+	}
+</div>	
