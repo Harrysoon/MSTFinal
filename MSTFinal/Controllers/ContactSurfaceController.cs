@@ -32,15 +32,16 @@ namespace MSTFinal.Controllers
                 mobileNumber = "No Mobile Number";
             }
 
-            MailMessage email = new MailMessage(model.EmailAddress, "harry.fleetwood@gmail.com");
+            MailMessage email = new MailMessage(model.EmailAddress, "admin@mstfitness.co.uk");
             email.Subject = model.Name + " | MST Fitness Enquiry";
             email.Body = model.Name + "\n\n" + model.EmailAddress + "\n\n" + mobileNumber + "\n\n\n" + model.Message;
 
             try
             {
-                var sendMail = new Thread(() =>
+                /*var sendMail = new Thread(() =>
                     SendEmail(email));
-                sendMail.Start();
+                sendMail.Start();*/
+                SendEmail(email);
             }
             catch (Exception ex)
             {
