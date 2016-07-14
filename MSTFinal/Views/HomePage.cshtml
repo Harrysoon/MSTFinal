@@ -38,7 +38,7 @@
                 {
 			        <div class="col-md-4 col-sm-6">
 			            <div class="program animate-box">
-			                <img src="images/fit-dumbell.svg" alt="Cycling"/>
+                            <img src="@Umbraco.TypedMedia(item.programIcon.ToString()).Url" />
 				            <h3>@item.Name</h3>
 				            <p>@umbraco.library.RemoveFirstParagraphTag(item.programDescription.ToString())</p>
 			            </div>
@@ -124,7 +124,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="heading-section text-center animate-box">
                     <h2>@Umbraco.Field("priceTitle", removeParagraphTags: true)</h2>
-                    @Umbraco.Field("pricesDescription")
+                    <div class="price-description">@Umbraco.Field("pricesDescription")</div>
                 </div>
             </div>
         </div>

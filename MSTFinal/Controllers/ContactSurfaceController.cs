@@ -15,53 +15,61 @@ namespace MSTFinal.Controllers
         [HttpPost]
         public ActionResult CreateContactMessage(ContactModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                TempData["IsSuccessful"] = false;
-                return CurrentUmbracoPage();
-            }
-            ViewBag.Contact = model;
+            string EncodedResponse = Request.Form["g-Recaptcha-Response"];
+            bool IsCaptchaValid = (RecaptchaClass.Validate(EncodedResponse) == "True" ? true : false);
 
-            var mobileNumber = "";
-            if(model.MobileNumber != null)
+            if (IsCaptchaValid)
             {
-                mobileNumber = model.MobileNumber;
-            }
-            else
-            {
-                mobileNumber = "No Mobile Number";
-            }
+                if (!ModelState.IsValid)
+                {
+                    TempData["IsSuccessful"] = false;
+                    return CurrentUmbracoPage();
+                }
+                ViewBag.Contact = model;
 
-            MailMessage email = new MailMessage(model.EmailAddress, "admin@mstfitness.co.uk");
-            email.Subject = model.Name + " | MST Fitness Enquiry";
-            email.Body = model.Name + "\n\n" + model.EmailAddress + "\n\n" + mobileNumber + "\n\n\n" + model.Message;
+                var mobileNumber = "";
+                if (model.MobileNumber != null)
+                {
+                    mobileNumber = model.MobileNumber;
+                }
+                else
+                {
+                    mobileNumber = "No Mobile Number";
+                }
 
-            try
-            {
-                /*var sendMail = new Thread(() =>
+                MailMessage email = new MailMessage(model.EmailAddress, "admin@mstfitness.co.uk");
+                email.Subject = model.Name + " | MST Fitness Enquiry";
+                email.Body = model.Name + "\n\n" + model.EmailAddress + "\n\n" + mobileNumber + "\n\n\n" + model.Message;
+
+                try
+                {
+                    /*var sendMail = new Thread(() =>
                     SendEmail(email));
                 sendMail.Start();*/
-                SendEmail(email);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                email.Dispose();
-            }
+                    SendEmail(email);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    email.Dispose();
+                }
 
-            TempData["IsSuccessful"] = true;
+                TempData["IsSuccessful"] = true;
 
 
-            return RedirectToCurrentUmbracoPage();
+                return RedirectToCurrentUmbracoPage();
+            }
+            
+            TempData["Error"] = true;
+            return CurrentUmbracoPage();
         }
-
         private void SendEmail(MailMessage email)
         {
             SmtpClient smtp = new SmtpClient();
-            smtp.Send(email);
+            //smtp.Send(email);
         }
     }
 }

@@ -5,7 +5,7 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(54.0650955, -2.8398727);
+    var myLatlng = new google.maps.LatLng(54.065050, -2.840152);
     // 39.399872
     // -8.224454
     
@@ -41,10 +41,17 @@ function init() {
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
     
-    var addresses = ['Morecambe'];
+    var addresses = ['4 Westgate, Morecambe, LA3 3LN'];
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: "MST Fitness",
+        icon: '/images/loc.png'
+    });
 
     for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json', null, function (data) {
             var p = data.results[0].geometry.location
             var latlng = new google.maps.LatLng(p.lat, p.lng);
             new google.maps.Marker({

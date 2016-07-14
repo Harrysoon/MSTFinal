@@ -328,6 +328,7 @@
     <Compile Include="Controllers\ContactSurfaceController.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\PlaceholderAttribute.cs" />
+    <Compile Include="Models\RecaptchaClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

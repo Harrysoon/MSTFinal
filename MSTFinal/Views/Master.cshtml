@@ -70,7 +70,6 @@
                                                        <ul class="sf-menu" id="fh5co-primary-menu">
                                                            <li><a href="/">Home</a></li>
                                                            <li><a href="/blog/">Blog</a></li>
-                                                           <li><a href="/results/">Results</a></li>
                                                            <li><a href="/about/">About</a></li>
                                                            <li><a href="/contact-page/">Contact</a></li>
                                                        </ul>
@@ -97,6 +96,7 @@
                            <script src="~/js/photoswipe-ui-default.min.js"></script>
                            <!-- Main JS (Do not remove) -->
                            <script src="~/js/main.js"></script>
+                           <script src='https://www.google.com/recaptcha/api.js'></script>
 
                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
                            <script src="~/js/google_map.js"></script>
@@ -114,14 +114,16 @@
                                            <div class="col-md-4 animate-box">
                                                <h3 class="section-title">Our Address</h3>
                                                <ul class="contact-info">
-                                                   <li><i class="icon-map-marker"></i>MST Fitness, Westgate, Morecambe, LA3 1AB</li>
-                                                   <li><i class="icon-phone"></i>+ 1234 5678 98</li>
-                                                   <li><i class="icon-envelope"></i><a href="#">mstfitness@gmail.com</a></li>
+                                                   <li><i class="icon-map-marker"></i>MST Fitness, 20 Westgate, Morecambe, LA3 3LN</li>
+                                                   <li><i class="icon-phone"></i>07545450804</li>
+                                                   <li><i class="icon-envelope"></i><a href="mailto:shane@mstfitness.co.uk" target="_top">shane@mstfitness.co.uk</a></li>
                                                </ul>
                                            </div>
                                            <div class="col-md-4 animate-box">
-                                               <h3 class="section-title">Enquiries</h3>
-                                               @Html.Partial("FooterContactForm", new MSTFinal.Models.ContactModel())
+                                               <h3 class="section-title">Opening Times</h3>
+                                               <p>Monday - Friday: <span>11:00 - 21:00</span></p>
+                                               <p >Saturday: <span class="sat">10:00 - 15:00</span></p>
+                                               <p class="sun">Sunday: <span class="sun">10:00 - 15:00</span></p>
                                            </div>
                                        </div>
                                        <div class="row copy-right">

@@ -488,6 +488,9 @@ figure {
 #fh5co-contact {
   padding: 7em 0;
 }
+#fh5co-blog-section {
+    padding: 4em 0 !important;
+}
 @media screen and (max-width: 768px) {
   #fh5co-programs-section,
   #fh5co-schedule-section,
@@ -1400,6 +1403,37 @@ p.fh5co-social-icons {
     margin-top: -12em !important;
 }
 
+.program {
+    text-align: center;
+    padding: 30px;
+    background: rgba(224, 224, 224, 0.47);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    position: relative;
+    height: 430px;
+}
+.program p {
+    text-align: left;
+}
+
+input.btn.btn-primary {
+    margin-top: 10px !important;
+}
+
+span.sat {
+    margin-left: 60px;
+}
+
+span.sun {
+    margin-left: 73px;
+}
+
+.price-description p {
+    text-align: left;
+}
 
 
 /*# sourceMappingURL=style.css.map */

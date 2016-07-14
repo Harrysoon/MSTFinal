@@ -15,68 +15,75 @@
     </div>
 </div><!-- end: fh5co-parallax -->
 <div id="fh5co-blog-section">
-			<div class="container">
-                        <div class="row text-center blog-row">
-                            <div class="container blog-container ">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/">Home</a> > <a href="/blog">Blog</a> > @Umbraco.Field("blogPostTitle")
+        </div>
+        <div class="row text-center blog-row">
+            <div class="container blog-container ">
 
-                                <div class="col-sm-6">
-                                    <h3>@Umbraco.Field("blogPostTitle")</h3>
+                <div class="col-sm-6">
+                    <h3>@Umbraco.Field("blogPostTitle")</h3>
 
-                                    @Umbraco.Field("blogPostContent")
+                    @Umbraco.Field("blogPostContent")
 
-                                    <div class="bottom-article">
-                                        <ul class="meta-post">
-                                            <li><i class="icon-calendar"></i><a>@Umbraco.Field("createDate", formatAsDate: true)</a></li>
-                                            <li><i class="icon-user"></i><a>@Umbraco.Field("creatorName")</a></li>
-                                            @{
-                                                var categoryId = @Umbraco.Field("category").ToString();
-                                                var category = Umbraco.Content(int.Parse(categoryId));
-                                            }
-                                            <li><i class="icon-folder-open"></i><a>@category.Name</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="row">
-                                        <div class="section-title blog">
-                                            <h3>Recent Posts</h3>
-                                            </div>
-                                            <div class="recent-posts">
-                                                @{
-                                                    var selection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children("blogPage").Where("Visible").OrderBy("CreateDate desc").Take(5);
-                                                }
-                                                <ul>
-                                                    @foreach (var item in selection)
-                                                    {
-                                                        <li>
-                                                            <h4><a href="@item.Url">@item.Name</a></h4>
-                                                        </li>
-                                                    }
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    <div class="row blog-categories">
-                                        <div class="section-title blog">
-                                            <h3>Categories</h3>
-                                        </div>
-                                        <div class="categories">
-										
-										@{
-											var categories = CurrentPage.Site().FirstChild("blogContent").Children("blogCategory").Where("Visible");
-										}
-										<ul>
-											@foreach(var item in categories){
-												<li>
-													<h4><a href="@item.Url">@item.Name</a></h4>
-												</li>
-											}
-										</ul>
-
-
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="bottom-article">
+                        <ul class="meta-post">
+                            <li><i class="icon-calendar"></i><a>@Umbraco.Field("createDate", formatAsDate: true)</a></li>
+                            <li><i class="icon-user"></i><a>@Umbraco.Field("creatorName")</a></li>
+                            @{
+                                var categoryId = @Umbraco.Field("category").ToString();
+                                var category = Umbraco.Content(int.Parse(categoryId));
+                            }
+                            <li><i class="icon-folder-open"></i><a>@category.Name</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="section-title blog">
+                            <h3>Recent Posts</h3>
+                        </div>
+                        <div class="recent-posts">
+                            @{
+                                var selection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children("blogPage").Where("Visible").OrderBy("CreateDate desc").Take(5);
+                            }
+                            <ul>
+                                @foreach (var item in selection)
+                                {
+                                    <li>
+                                        <h4><a href="@item.Url">@item.Name</a></h4>
+                                    </li>
+                                }
+                            </ul>
                         </div>
                     </div>
-			</div>
+                    <div class="row blog-categories">
+                        <div class="section-title blog">
+                            <h3>Categories</h3>
+                        </div>
+                        <div class="categories">
+
+                            @{
+                                var categories = CurrentPage.Site().FirstChild("blogContent").Children("blogCategory").Where("Visible").OrderBy("categoryName asc");
+                            }
+                            <ul>
+                                <li>
+                                    <h4><a href="/blog">All</a></h4>
+                                </li>
+                                @foreach (var item in categories)
+                                {
+                                    <li>
+                                        <h4><a href="@item.Url">@item.Name</a></h4>
+                                    </li>
+                                }
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
