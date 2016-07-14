@@ -2,7 +2,7 @@
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @inherits Umbraco.Web.Macros.PartialViewMacroPage
 	@{
-		int pageSize = 3;
+		int pageSize = 5;
 		int page = 1;
 		int.TryParse(Request.QueryString["page"], out page);
         var nodes = Umbraco.Content(1230).Children().Where("Visible").OrderBy("CreateDate desc");
@@ -29,12 +29,18 @@
 
 <ul>
     <div class="col-sm-6">
-        @foreach (var blogPage in nodes.Skip((page - 1)*pageSize).Take(pageSize))
+        @if (!nodes.Any())
         {
-            if (param != null && blogPage.category != param)
+            <p>Oops, nothing seems to be here...</p>
+        }
+        else
+        {
+            foreach (var blogPage in nodes.Skip((page - 1) * pageSize).Take(pageSize))
             {
-                continue;
-            }
+                if (param != null && blogPage.category != param)
+                {
+                    continue;
+                }
             <h3>
                 <a class="blog-url" href="@umbraco.library.NiceUrl(blogPage.Id)">@blogPage.blogPostTitle</a>
             </h3>
@@ -51,7 +57,8 @@
                 </ul>
             </div>
             <br/>
-        }
+                            }
+                        }
         @if (totalPages > 1)
         {
             <div class="paging">

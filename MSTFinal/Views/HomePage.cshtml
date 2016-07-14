@@ -10,7 +10,7 @@
 				<div class="desc animate-box">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-7">
+							<div class="home col-md-7">
 								<h2>MST <b>Systems</b></h2>
 								<p><span>Training Systems personally tailored to your goals</span></p>
 							</div>
@@ -47,7 +47,7 @@
 				</div>
 			</div>
 		</div>
-        <div id="fh5co-blog-section" class="fh5co-lightgray-section">
+    <div id="fh5co-blog-section" class="fh5co-lightgray-section">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -60,6 +60,10 @@
 
             @{
                 var blogSelection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children.Where("Visible").OrderBy("UpdateDate desc").Take(2);
+                if (!blogSelection.Any())
+                {
+                    <p>No blog posts have been posted yet, but check back soon!</p>
+                }
             }
             <ul>
                 @foreach (var blogPage in blogSelection)
@@ -75,7 +79,6 @@
                     <hr />
                 }
             </ul>
-
             <a href="/blog">Blog</a>
         </div>
     </div>

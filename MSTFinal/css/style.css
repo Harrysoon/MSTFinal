@@ -319,7 +319,7 @@ figure {
   float: left;
   margin-bottom: 0;
   margin-top: 0;
-  font-family: 'Orbitron', sans-serif !important;
+  font-family: 'Michroma', sans-serif;
 }
 #fh5co-logo a {
   position: relative;
@@ -1433,6 +1433,14 @@ span.sun {
 
 .price-description p {
     text-align: left;
+}
+
+.about.fh5co-pricing {
+    padding: 4em 0;
+}
+
+.about.programs{
+    padding-bottom: 1em;
 }
 
 

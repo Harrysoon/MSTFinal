@@ -6,17 +6,27 @@
     {
         <h1>Message Sent</h1>
         <p>Your message has been sent. Someone will be in touch shortly.</p>
+        <a href="/">Return to homepage</a>
     }
     else
     {
-    <fieldset>
+        if (Convert.ToBoolean(TempData["Error"]))
+        {
+            <p>Something went wrong, please try again.</p>
+        }
+        <fieldset>
         <div class="row">
-            <div class="col-md-6 animate-box">
+            <div class="col-md-6">
                 <h3 class="section-title">Enquiries</h3>
                 <p>We are happy to answer any questions you may have about MST and the programs we offer.</p>
                 <p>If you'd like to talk more about starting your journey with MST then please don't hestiate to get in touch. If you'd like us to call you back then please leave your mobile number and message us with a time that's best to get in touch.</p>
+            
+                <h3 class="section-title">Opening Times</h3>
+                <p>Monday - Friday: <span>11:00 - 21:00</span></p>
+                <p>Saturday: <span class="sat">10:00 - 15:00</span></p>
+                <p class="sun">Sunday: <span class="sun">10:00 - 15:00</span></p>
             </div>
-            <div class="col-md-6 animate-box">
+            <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -37,11 +47,13 @@
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            @Html.TextAreaFor(x => x.Message, new { @class = "form-control", @placeholder = "Message", @rows = "7" })
+                            @Html.TextAreaFor(x => x.Message, new {@class = "form-control", @placeholder = "Message", @rows = "7"})
                             @Html.ValidationMessageFor(x => x.Message)
                         </div>
                     </div>
                     <div class="col-md-12">
+
+                        <div class="g-recaptcha" data-sitekey="6Lee9SQTAAAAACOE-b7BgXu9Ra2D49gcpyP1o30w"></div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary">
                         </div>

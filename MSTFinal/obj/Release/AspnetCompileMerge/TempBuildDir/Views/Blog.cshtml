@@ -1,0 +1,83 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.BlogContent>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+    var param = Request.Params["category"];
+    dynamic cat = null;
+    if(param != null)
+    {
+        cat = Umbraco.Content(int.Parse(param));
+    }
+}
+<div class="fh5co-parallax" style="background-image: url(/images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+                <div class="fh5co-intro fh5co-table-cell animate-box">
+                    @if (cat != null)
+                    {
+                        <h1 class="text-center">@cat.Name Blog</h1>
+                    }
+                    else
+                    {
+                    <h1 class="text-center">Blog</h1>
+                    }
+					<p>All things MST</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end: fh5co-parallax -->
+<div id="fh5co-blog-section">
+    <div class="container">
+        <div class="container blog-container">
+            @Umbraco.RenderMacro("ListResults", new { PageSize = 1 })
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="section-title blog">
+                        <h3>Recent Posts</h3>
+                    </div>
+                    <div class="recent-posts">
+                        @{
+                            var selection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children("blogPage").Where("Visible").OrderBy("CreateDate desc").Take(5);
+                        }
+                        <ul>
+                            @foreach (var item in selection)
+                            {
+                                <li>
+                                    <h4><a href="@item.Url">@item.Name</a></h4>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="row blog-categories">
+                    <div class="section-title blog">
+                        <h3>Categories</h3>
+                    </div>
+                    <div class="categories">
+
+                        @{
+                            var categories = CurrentPage.Site().FirstChild("blogContent").Children("blogCategory").Where("Visible");
+                        }
+                        <ul>
+                            <li>
+                                <h4><a href="/blog">All</a></h4>
+                            </li>
+                            @foreach (var item in categories)
+                            {
+                                <li>
+                                    <h4><a href="@item.Url">@item.Name</a></h4>
+                                </li>
+                            }
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+   </div>
+</div>

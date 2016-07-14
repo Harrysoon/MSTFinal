@@ -116,6 +116,7 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0;
+      border-top: 1px solid #afafaf !important;
 }
 
 pre {

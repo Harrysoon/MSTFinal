@@ -54,7 +54,7 @@ namespace MSTFinal.Controllers
                 }
                 finally
                 {
-                    email.Dispose();
+                    
                 }
 
                 TempData["IsSuccessful"] = true;
@@ -69,7 +69,13 @@ namespace MSTFinal.Controllers
         private void SendEmail(MailMessage email)
         {
             SmtpClient smtp = new SmtpClient();
-            //smtp.Send(email);
+
+            Thread t = new Thread(delegate ()
+            {
+                smtp.Send(email);
+            });
+
+            t.Start();
         }
     }
 }
