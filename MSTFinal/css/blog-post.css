@@ -3,7 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+.paging {
+    margin-left: -50px;
+    margin-bottom: -50px;
+}
 .paging a {
     background-color: rgba(14, 14, 14, 0.83);
     color: white;
@@ -105,12 +108,21 @@ ul.meta-post li a{
     margin-left: -1em;
     margin-top: 1em;
 }
-
-@media(max-width: 767px){
+@media(max-width: 475px) {
+    ul.meta-post li {
+        border: none;
+    }
+}
+@media(max-width: 768px){
     .col-sm-3{
         float:left;
         margin-top:2em;
+        margin-left: 40px
     }
+    .col-sm-6 {
+    width: 100%; 
+}
+
 }
 .blog-categories{
     margin-top: 2em;

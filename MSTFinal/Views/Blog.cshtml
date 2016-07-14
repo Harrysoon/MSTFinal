@@ -32,35 +32,7 @@
 <div id="fh5co-blog-section">
     <div class="container">
         <div class="container blog-container">
-            @{
-                var blogSelection = CurrentPage.Site().FirstChild("blogContent").FirstChild("blogPostHolder").Children.Where("Visible").OrderBy("UpdateDate desc");
-            }
-            <ul>
-                <div class="col-sm-6">
-                    @foreach (var blogPage in blogSelection)
-                    {
-                        if (param != null && blogPage.category != param)
-                        {
-                            continue;
-                        }
-                        <h3><a class="blog-url" href="@umbraco.library.NiceUrl(blogPage.Id)">@blogPage.blogPostTitle</a>
-                        </h3>
-                        <p>@blogPage.blogPostContent</p>
-                        <div class="bottom-article">
-                            <ul class="meta-post">
-                                <li><i class="icon-calendar"></i><a>@umbraco.library.FormatDateTime(@blogPage.createDate.ToString(), "dd/MM/yyyy")</a></li>
-                                <li><i class="icon-user"></i><a>@blogPage.creatorName</a></li>
-                                @{
-                                    var categoryId = blogPage.Category;
-                                    var category = Umbraco.Content(int.Parse(categoryId));
-                                }
-                                <li><i class="icon-folder-open"></i><a href="/blog?category=@category.Id">@category.Name</a></li>
-                            </ul>
-                        </div>
-                        <br/>
-                    }
-                </div>
-            </ul>
+            @Umbraco.RenderMacro("ListResults", new { PageSize = 1 })
             <div class="col-sm-3">
                 <div class="row">
                     <div class="section-title blog">
